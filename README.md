@@ -85,6 +85,11 @@ Output is written to the `output` folder.
    }
 }
 ```
+## Running the Script
+
+This repository does not include the source data. (It's big...) Download the data from
+quattroshapes and GeoNames into the `source-data` folder first (instructions are [here](https://github.com/rsimon/mini-gazetteer/blob/master/source-data/README.md)), and
+then run `python convertSourceData.py`.
 
 ## License Info
 
