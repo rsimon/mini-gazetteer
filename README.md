@@ -10,9 +10,9 @@ Scripts for building a minimalistic gazetteer dataset from the following data so
 ## Output Format
 
 Generated output is a plaintext file that holds __one GeoJSON record per line__. The `id`
-field holds the ID assigned in quattroshapes. The `properties` hold the corresponding
-GeoNames ID (where included in the quattroshapes data) and an array of names. Names are
-JSON objects which always contain a `label` field, and optionally a `lang` field.
+field holds the ID assigned in quattroshapes. The `properties` hold: a `label` (the value recorded 
+in quattroshapes as _local name_ or _name_); the corresponding GeoNames ID, if any; and an array
+of names. Names are JSON objects which always contain a `label` field, and optionally a `lang` field.
 
 Output is written to the `output` folder.
 
