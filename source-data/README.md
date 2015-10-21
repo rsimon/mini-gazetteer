@@ -1,6 +1,6 @@
 # Source data
 
-This repository does not include the source data. (It's big...)
+This repository does not include the source data.
 
 Please grab your own copies of the two necessary data files here:
 
