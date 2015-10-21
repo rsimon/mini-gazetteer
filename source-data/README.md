@@ -2,7 +2,7 @@
 
 This repository does not include the source data. (It's big...)
 
-Please grab your own copy of the two necessary data files here:
+Please grab your own copies of the two necessary data files here:
 
 * The __quatroshapes gazetteer file__ (gzipped geojson version, named
   `quattroshapes_gazetteer_gn_then_gp.gz` from
