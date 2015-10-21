@@ -85,3 +85,13 @@ Output is written to the `output` folder.
    }
 }
 ```
+
+## License Info
+
+Really not much to license here, except for a few lines of Python code. But consider things
+[MIT-licensed](https://raw.githubusercontent.com/rsimon/mini-gazetteer/master/MIT-License.txt).
+
+The source data is licensed separately, but not included in this repository. (For info:
+quattroshapes is released by [foursquare](https://github.com/foursquare) under
+[CC-BY 2.0](http://creativecommons.org/licenses/by/2.0/) attribution license. GeoNames data
+is released under [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/) attribution license.)
