@@ -5,7 +5,7 @@ Scripts for building a minimalistic gazetteer dataset from the following data so
 * The [quattroshapes](https://github.com/foursquare/quattroshapes) GeoJSON gazetteer dump file is
   used as the 'master file'.
 * The [GeoNames alternateNames](http://download.geonames.org/export/dump/) table is used to
-  enrich quattroshapes records with additional names (and language codes, where available).
+  enrich quattroshapes records with additional names (and language codes, where provided).
 
 ## Output Format
 
