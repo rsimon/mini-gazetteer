@@ -49,14 +49,16 @@ with open('source-data/quattroshapes_gazetteer_gn_then_gp.shp.json', 'r') as g, 
         if feature['geometry']:
             ctr += 1
 
+            props = feature['properties']
+
             place = {
                 'type': 'Feature',
                  'id': feature['id'],
                  'geometry': feature['geometry'],
-                 'properties': {}
+                 'properties': {
+                     'country': props['iso']
+                 }
             }
-
-            props = feature['properties']
 
             if 'gn_id' in props:
                 gnId = props['gn_id']
@@ -71,6 +73,9 @@ with open('source-data/quattroshapes_gazetteer_gn_then_gp.shp.json', 'r') as g, 
                 place['properties']['label'] = props['name']
             else:
                 print('Warning: unnamed place ' + json.dumps(props))
+
+            if 'gn_pop' in props:
+                place['properties']['geonames_population'] = props['gn_pop']
 
             outfile.write(json.dumps(place) + '\n')
 

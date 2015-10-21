@@ -1,0 +1,67 @@
+# quattroshapes Sample Record
+
+```json
+{  
+   "geometry":{  
+      "type":"Point",
+      "coordinates":[  
+         16.37169,
+         48.2082
+      ]
+   },
+   "id":"101037",
+   "properties":{  
+      "scalerank":-99,
+      "name_lau":null,
+      "gn_country":"AT",
+      "woe_id":2344716,
+      "name_adm1":"Wien",
+      "name_adm0":"\u00d6sterreich",
+      "name_adm2":null,
+      "placetype":"State",
+      "woe_funk":null,
+      "adm0cap":null,
+      "matchtype":"david reup",
+      "natscale":-99,
+      "megacity":null,
+      "gns_id":null,
+      "pop_sr":12,
+      "gn_id_eh":2761367.0,
+      "gn_id":2761367,
+      "micro_core":null,
+      "qs_id":null,
+      "parent_id":23424750,
+      "woe_name":"Wien",
+      "woe_adm2":0,
+      "gn_fclass":"A",
+      "woe_adm0":23424750,
+      "woe_adm1":2344716,
+      "worldcity":null,
+      "photos_all":401638,
+      "woe_id_eh":2344716,
+      "photos_9k":1000.0,
+      "photos_sr":8,
+      "woe_lau":0,
+      "metro_core":null,
+      "name_local":"Wien",
+      "photos":689,
+      "woe_local":2344716,
+      "geom_qual":null,
+      "gn_pop":1569316,
+      "woe_nameen":"Vienna",
+      "featurecla":null,
+      "gn_name":"Wien",
+      "photos_9r":28,
+      "photos_1k":140.0,
+      "gn_ascii":"Wien",
+      "name":"Wien",
+      "language":"GER",
+      "gn_admin1":"09",
+      "gn_admin2":null,
+      "gn_fcode":"ADM1",
+      "iso":"AT",
+      "woemembers":136,
+      "accuracy":"geonames match great"
+   }
+}
+```
