@@ -31,7 +31,7 @@ with open('source-data/alternateNames.txt', 'r') as n:
             addAltName(gnId, lang, altName)
 
     n.close()
-    print('Done. Got alternate names for ' + str(len(altNames)) + ' GeonNames places.')
+    print('Done. Got alternate names for ' + str(len(altNames)) + ' GeoNames places.')
 
 # Load quattroshapes GoeJSON dump
 with open('source-data/quattroshapes_gazetteer_gn_then_gp.shp.json', 'r') as g, \
