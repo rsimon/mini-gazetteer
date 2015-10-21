@@ -31,18 +31,18 @@ with open('source-data/alternateNames.txt', 'r') as n:
             addAltName(gnId, lang, altName)
 
     n.close()
-    print('Done. Got alternate names for ' + str(len(altNames)) + ' places')
+    print('Done. Got alternate names for ' + str(len(altNames)) + ' GeonNames places.')
 
 # Load quattroshapes GoeJSON dump
 with open('source-data/quattroshapes_gazetteer_gn_then_gp.shp.json', 'r') as g, \
      open('output/places.json.txt', 'w') as outfile:
 
-    print('Loading quattroshapes GeoJSON.')
+    print('Loading quattroshapes GeoJSON...')
     places = json.load(g)
 
     ctr = 0
 
-    print('Converting places...')
+    print('Done. Converting places...')
     for feature in places['features']:
 
         # Skip places without geometry
@@ -77,4 +77,4 @@ with open('source-data/quattroshapes_gazetteer_gn_then_gp.shp.json', 'r') as g, 
     outfile.close()
     g.close()
 
-print('Done. Converted ' + str(ctr) + ' features')
+print('Done. Wrote ' + str(ctr) + ' GeoJSON features.')
