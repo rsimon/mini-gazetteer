@@ -8,8 +8,8 @@ Scripts for building a minimalistic gazetteer dataset from the following data so
   enrich quattroshapes records with additional names (and language codes, where provided).
 
 If you're on Linux, and have the usual complement of tools and helpers installed (wget, gunzip,
-unzip, python) you can try running the `.buildGazetteer` script, which will do the whole
-download and conversion for you.
+unzip, python) you can try running the `.buildGazetteer` script. This will download the source
+data and do the conversion all in one step.
 
 ## Output Format
 
