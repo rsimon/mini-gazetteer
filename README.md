@@ -109,7 +109,7 @@ Once you have the data file, one thing you may want to do with it is to set up a
 search endpoint. An ultra-quick solution to achieve this is to download and install the
 Open Source search server [ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html),
 and use a nifty command-line utility called [stream2es](https://github.com/elastic/stream2es) to
-batch-upload the file. If you're on Linux, the command should look something like this:
+batch-index the file. If you're on Linux, the command should look something like this:
 
 `cat places.json.txt | stream2es stdin --target http://localhost:9200/gazetteer/place`
 
