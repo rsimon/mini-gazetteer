@@ -108,6 +108,10 @@ batch-upload the file. If you're on Linux, the command should look something lik
 
 `cat places.json.txt | stream2es stdin --target http://localhost:9200/gazetteer/place`
 
+A few minutes later, you'll have a fully searchable index you can query like so:
+
+http://localhost:9200/gazetteer/_search?q=label:Wien&sort=geonames_population:desc&pretty
+
 ## License Info
 
 Really not much to license here, except for a few lines of Python code. But consider things
