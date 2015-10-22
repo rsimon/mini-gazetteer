@@ -98,6 +98,16 @@ This repository does not include the source data. (It's big...) Download the dat
 quattroshapes and GeoNames into the `source-data` folder first (instructions are [here](https://github.com/rsimon/mini-gazetteer/blob/master/source-data/README.md)), and
 then run `python convertSourceData.py`.
 
+## And What Now?
+
+Once you have the data file, one thing you may want to do with it is to set up an HTTP
+search endpoint. An ultra-quick solution to achieve this is to download and install the
+Open Source search server [ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html),
+and use a nifty command-line utility called [stream2es](https://github.com/elastic/stream2es) to
+batch-upload the file. If you're on Linux, the command should look something like this:
+
+`cat places.json.txt | stream2es stdin --target http://localhost:9200/gazetteer/place`
+
 ## License Info
 
 Really not much to license here, except for a few lines of Python code. But consider things
