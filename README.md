@@ -115,7 +115,7 @@ batch-index the file. If you're on Linux, the command should look something like
 
 Minutes later, you'll have a fully searchable index you can query like so:
 
-http://localhost:9200/gazetteer/_search?q=label:Wien&sort=geonames_population:desc&pretty
+[http://localhost:9200/gazetteer/_search?q=label:Wien&sort=geonames_population:desc&pretty](http://localhost:9200/gazetteer/_search?q=label:Wien&sort=geonames_population:desc&pretty)
 
 ## License Info
 
