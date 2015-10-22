@@ -7,6 +7,10 @@ Scripts for building a minimalistic gazetteer dataset from the following data so
 * The [GeoNames alternateNames](http://download.geonames.org/export/dump/) table is used to
   enrich quattroshapes records with additional names (and language codes, where provided).
 
+If you're on Linux, and have the usual complement of tools and helpers installed (wget, gunzip,
+unzip, python) you can try running the `.buildGazetteer` script, which will do the whole
+download and conversion for you.
+
 ## Output Format
 
 Generated output is a plaintext file that holds __one GeoJSON record per line__. The `id`
@@ -108,7 +112,7 @@ batch-upload the file. If you're on Linux, the command should look something lik
 
 `cat places.json.txt | stream2es stdin --target http://localhost:9200/gazetteer/place`
 
-A few minutes later, you'll have a fully searchable index you can query like so:
+Minutes later, you'll have a fully searchable index you can query like so:
 
 http://localhost:9200/gazetteer/_search?q=label:Wien&sort=geonames_population:desc&pretty
 
